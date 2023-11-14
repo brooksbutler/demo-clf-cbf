@@ -40,7 +40,7 @@ We want to choose the minimum $u$ such that for any given $x \in \mathcal{C} \su
 
 $$\dot{h}(x,u) + \alpha(h(x)) = -2\begin{bmatrix} x_1 & x_2 \end{bmatrix} \begin{bmatrix} u_1 \\ u_2 \end{bmatrix} - 2\begin{bmatrix} x_1 & x_2 \end{bmatrix} f(x) + \alpha(h(x)) \geq 0 $$
 
-where $\alpha(\cdot)$ is a class-$\mathcal{K}$ function.
+where $\alpha(\cdot)$ is a class- $\mathcal{K}$ function.
 
 
 ![image](CBF_example.png)
