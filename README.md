@@ -55,7 +55,7 @@ $$h_2(x) = \Vert o_2 - x \Vert^2_2 - d^2 $$
 
 where $o_1, o_2 \in \mathbb{R}^2$ are the locations of each obstacle and $d > 0$ is the minimum safe distance we wish to maintain away from each obstacle.
 
-$$ \mathcal{C} = \{x \in \mathbb{R}^2: h_1(x) \geq 0 \wedge h_2(x) \geq 0 \}. $$
+$$ \mathcal{C} = \{x \in \mathbb{R}^2: h_1(x) \geq 0 \wedge h_2(x) \geq 0 \} $$
 
 We can formulate the combined CLF and CBF conditions by satisfying the following linear constraints with respect to $u$
 
