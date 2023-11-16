@@ -44,3 +44,21 @@ where $\alpha(\cdot)$ is a class- $\mathcal{K}$ function.
 
 
 ![image](CBF_example.png)
+
+# Implementing a CLF-CBF
+
+Define safety conditions for avoiding two obstacles  
+
+$$h_1(x) = \Vert o_1 - x \Vert^2_2 - d^2 $$
+
+$$h_2(x) = \Vert o_2 - x \Vert^2_2 - d^2 $$
+
+where $o_1, o_2 \in \mathbb{R}^2$ are the locations of each obstacle and $d > 0$ is the minimum safe distance we wish to maintain away from each obstacle.
+
+$$ \mathcal{C} = \left\{x \in \mathbb{R}^2: h_1(x) \geq 0 \wedge h_2(x) \geq 0 \right\}. $$
+
+We can formulate the combined CLF and CBF conditions by satisfying the following linear constraints with respect to $u$
+
+$$ \begin{bmatrix} (x - x_e)^\top \\ 2(o_1 - x)^\top \\ 2(o_2 - x)^\top  \end{bmatrix} u  \leq \begin{bmatrix} -\frac{\partial V}{\partial x} f(x) - \lambda V(x) \\ \frac{\partial h_1}{\partial x} f(x) + \alpha h_1(x) \\ \frac{\partial h_2}{\partial x} f(x) + \alpha h_2(x) \end{bmatrix}$$
+
+![image](CLF_CBF_example.png)
